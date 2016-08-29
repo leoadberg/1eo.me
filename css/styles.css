@@ -48,7 +48,7 @@ ul.tab {
     padding: 0;
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    background-color: #26637E;
 }
 
 /* Float the list items side by side */
@@ -66,15 +66,15 @@ ul.tab li a {
 }
 
 /* Change background color of links on hover */
-ul.tab li a:hover {background-color: #26637E;}
+ul.tab li a:hover {background-color: #5F899C;}
 
 /* Create an active/current tablink class */
-ul.tab li a:focus, .active {background-color: #ccc;}
+ul.tab li a:focus, .active {background-color: #5F899C;}
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #5F899C;
+    border: 1px solid #ccc;
     border-top: none;
 }
