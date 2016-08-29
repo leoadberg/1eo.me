@@ -5,10 +5,12 @@ body {
 
 td {
 	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
 }
 
 th {
 	font-family: Arial, Helvetica, sans-serif;
+	padding: 0;
 }
 
 table {border: none;}
