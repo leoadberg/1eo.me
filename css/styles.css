@@ -7,12 +7,14 @@ titleyellow {
 	color:#EBA342;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 24px;
+	letter-spacing: 2px;
 }
 titlewhite {
 	font-family: Arial, Helvetica, sans-serif;
 	color:#FFFFFF;
 	font-weight: bold;
 	font-size: 24px;
+	letter-spacing: 2px;
 }
 
 small {
