@@ -23,8 +23,8 @@
 
   <script>
   w3IncludeHTML();
-  temptabs = document.getElementsByClassName("tabcontent");
   
+  temptabs = document.getElementsByClassName("tabcontent");
   for (i = 0; i < temptabs.length; i++) {
 	if (temptabs[i].hasAttribute("default")) {
 	  temptabs[i].style.display = "block";
@@ -50,7 +50,7 @@
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-}
+  }
   //openTab(event, "Dashboard");
   </script>
 </body>
