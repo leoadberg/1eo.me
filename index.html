@@ -63,12 +63,12 @@
 	  Array.prototype.randomElement = function () {
 		return this[Math.floor(Math.random() * this.length)]
 	  }
-	  var tabs = document.querySelectorAll('tab');
+	  var tabs = document.getElementsByClassName('tablinks');
 	  console.log(tabs);
-	  for (var i = 0; i < tabs[0].childElementCount; i++) {
-		  if (tabs[0].children[i].children[0].hasAttribute('randomtext')){
-			  randomtext = tabs[0].children[i].children[0].getAttribute('randomtext').split(',').randomElement();
-			  tabs[0].children[i].children[0].innerHTML = randomtext;
+	  for (var i = 0; i < tabs.childElementCount; i++) {
+		  if (tabs[i].hasAttribute('randomtext')){
+			  randomtext = tabs[i].getAttribute('randomtext').split(',').randomElement();
+			  tabs[i].innerHTML = randomtext;
 		  }
 		  
 	  }
