@@ -60,6 +60,7 @@ ul.tab li a {
     color: white;
     text-align: center;
     padding: 8px 10px;
+	margin: 10px 10px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
