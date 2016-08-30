@@ -24,6 +24,12 @@ smalltitle {
 	letter-spacing: 2px;
 }
 
+name {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	font-size: 12px;
+}
+
 small {
 	font-size: 6px;
 	line-height: 50%;
