@@ -46,7 +46,7 @@
 
   <script>
   w3IncludeHTML();
-  temptabs = document.getElementsByClassName("tabcontent");
+  var temptabs = document.getElementsByClassName("tabcontent");
   for (i = 0; i < temptabs.length; i++) {
 	if (temptabs[i].hasAttribute("default")) {
 	  temptabs[i].style.display = "block";
