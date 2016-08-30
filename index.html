@@ -20,7 +20,7 @@
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-		if (tabcontent[i].default == "true") {
+		if (tabcontent[i].hasAttribute("default")) {
 			tabcontent[i].style.display = "block";
 		} else {
         	tabcontent[i].style.display = "none";
