@@ -59,11 +59,11 @@ ul.tab li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 8px 10px;
-	margin: 10px 10px;
+    padding: 5px 10px;
+	margin: 5px 5px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 12px;
 	border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
