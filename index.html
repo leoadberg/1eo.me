@@ -28,7 +28,7 @@
   w3IncludeHTML();
   
   temptabs = document.getElementsByClassName("tabcontent");
-  for (var i = 0; i < temptabs.length; i++) {
+  for (i = 0; i < temptabs.length; i++) {
 	if (temptabs[i].hasAttribute("default")) {
 	  temptabs[i].style.display = "block";
 	}
@@ -40,14 +40,14 @@
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
-    for (var i = 0; i < tabcontent.length; i++) {
+    for (i = 0; i < tabcontent.length; i++) {
     	tabcontent[i].style.display = "none";
         tabcontent[i].className = tabcontent[i].className.replace(" default", "");
     }
 
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
-    for (var i = 0; i < tablinks.length; i++) {
+    for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
@@ -63,7 +63,7 @@
 	  Array.prototype.randomElement = function () {
 		return this[Math.floor(Math.random() * this.length)]
 	  }
-	  tabs = document.getElementsByClassName('tab');
+	  var tabs = document.getElementsByClassName('tab');
 	  console.log(tabs);
 	  for (var i = 0; i < tabs[0].childElementCount; i++) {
 		  if (tabs[0].children[i].children[0].hasAttribute('randomtext')){
