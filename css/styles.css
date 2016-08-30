@@ -63,6 +63,8 @@ ul.tab li a {
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+	border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 /* Change background color of links on hover */
