@@ -28,7 +28,8 @@ name {
 	font-family: Arial, Helvetica, sans-serif;
 	color:#FFFFFF;
 	font-size: 12px;
-	text-align: center;
+	position: relative;
+	top: -8px;
 }
 
 small {
