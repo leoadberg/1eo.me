@@ -11,8 +11,26 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   
   <script src="w3data.js"></script>
-  
+
+</head>
+
+<body>
+  <!--<script src="js/scripts.js"></script>-->
+  Hey just testing the new CalCentral parody website!
+  <div w3-include-html="/html/header.html"></div>
+  <div w3-include-html="/html/navbar.html"></div>
+  <div w3-include-html="/html/body.html"></div>
+
   <script>
+  w3IncludeHTML();
+  temptabs = document.getElementsByClassName("tabcontent");
+  
+  for (i = 0; i < temptabs.length; i++) {
+	if (temptabs[i].hasAttribute("default")) {
+	  temptabs[i].style.display = "block";
+	}
+  }
+  
   function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
@@ -33,25 +51,6 @@
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-  </script>
-
-</head>
-
-<body>
-  <!--<script src="js/scripts.js"></script>-->
-  Hey just testing the new CalCentral parody website!
-  <div w3-include-html="/html/header.html"></div>
-  <div w3-include-html="/html/navbar.html"></div>
-  <div w3-include-html="/html/body.html"></div>
-
-  <script>
-  w3IncludeHTML();
-  var temptabs = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < temptabs.length; i++) {
-	if (temptabs[i].hasAttribute("default")) {
-	  temptabs[i].style.display = "block";
-	}
-  }
   //openTab(event, "Dashboard");
   </script>
 </body>
