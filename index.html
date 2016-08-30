@@ -63,7 +63,7 @@
 	  Array.prototype.randomElement = function () {
 		return this[Math.floor(Math.random() * this.length)]
 	  }
-	  var tabs = document.getElementsByClassName('tab');
+	  var tabs = document.querySelectorAll('tab');
 	  console.log(tabs);
 	  for (var i = 0; i < tabs[0].childElementCount; i++) {
 		  if (tabs[0].children[i].children[0].hasAttribute('randomtext')){
