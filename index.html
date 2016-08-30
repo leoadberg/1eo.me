@@ -60,6 +60,7 @@
     return this[Math.floor(Math.random() * this.length)]
   }
   tabs = document.getElementsByClassName('tab');
+  console.log(tabs);
   for (i = 0; i < tabs[0].childElementCount; i++) {
 	  if (tabs[0].children[i].children[0].hasAttribute('randomtext')){
 	      randomtext = tabs[0].children[i].children[0].getAttribute('randomtext').split(',').randomElement();
