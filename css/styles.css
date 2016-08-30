@@ -79,4 +79,4 @@ ul.tab li a:focus, .active {background-color: #5F899C;}
     border-top: none;
 }
 
-.tabcontent .active {display: block;}
+.default {display: block !important;}
