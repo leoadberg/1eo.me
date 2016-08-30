@@ -72,9 +72,9 @@
 		  }
 		  
 	  }
-	  name = document.getElementsByTagName('name');
-	  if (name != "[object NodeList]"){
-		  name[0].innerHTML = name[0].getAttribute('randomtext').split(',').randomElement();
+	  username = document.getElementsByTagName('name');
+	  if (username.length > 0){
+		  username[0].innerHTML = username[0].getAttribute('randomtext').split(',').randomElement();
 	  }
   }
   </script>
