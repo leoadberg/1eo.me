@@ -72,6 +72,10 @@
 		  }
 		  
 	  }
+	  name = document.getElementsByTagName('name');
+	  if (name != "[object NodeList]"){
+		  name[0].innerHTML = name[0].getAttribute('randomtext').split(',').randomElement();
+	  }
   }
   </script>
 </body>
