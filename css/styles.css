@@ -3,6 +3,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+logo a:hover{
+	background-color: #5F899C;
+}
+
 titleyellow {
 	color:#EBA342;
 	font-family: Arial, Helvetica, sans-serif;
