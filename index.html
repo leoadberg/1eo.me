@@ -176,7 +176,7 @@
 	  */
 	  elems = document.querySelectorAll('[randomtext]');
 	  for (var i = 0; i < elems.length; i++) {
-		  elems[i].innerHTML = elems[0].getAttribute('randomtext').split(',').randomElement();
+		  elems[i].innerHTML = elems[i].getAttribute('randomtext').split(',').randomElement();
 	  }
   }
   
