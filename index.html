@@ -166,7 +166,8 @@
   function setDate() {
 	  var d = new Date();
 	  var month = ["JAN","FEB","MARCH","APRIL","MAY","JUNE","JULY","AUG","SEP","OCT","NOV","DEC"];
-	  document.getElementById("date").innerHTML = month[d.getMonth()];
+	  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+	  document.getElementById("date").innerHTML = days[d.getDay()] + " " + month[d.getMonth()] + " " + d.getDate();
   }
   </script>
 </body>
