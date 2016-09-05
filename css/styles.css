@@ -126,3 +126,11 @@ ul.tab li a:focus, .active {background-color: #5F899C;}
 }
 
 .default {display: block !important;}
+
+.dashboardwindow {
+	
+}
+
+.dashboardwindow tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
