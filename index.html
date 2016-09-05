@@ -167,7 +167,7 @@
 	  var d = new Date();
 	  var month = ["JAN","FEB","MARCH","APRIL","MAY","JUNE","JULY","AUG","SEP","OCT","NOV","DEC"];
 	  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-	  document.getElementById("date").innerHTML = days[d.getDay()] + " " + month[d.getMonth()] + " " + d.getDate();
+	  document.getElementById("date").innerHTML = days[d.getDay()] + " <greylabel>" + month[d.getMonth()] + " " + d.getDate() + "</greylabel>";
   }
   </script>
 </body>
