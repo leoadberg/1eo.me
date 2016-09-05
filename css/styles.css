@@ -178,3 +178,8 @@ loadbutton:hover{
  background-image: -o-linear-gradient(top, #d9dddd, #c6c3c3);
  background-image: linear-gradient(to bottom, #d9dddd, #c6c3c3);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d9dddd, endColorstr=#c6c3c3);
 }
+
+.linklist {
+	list-style-type:none;
+	vertical-align: top;
+}
