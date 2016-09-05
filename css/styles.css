@@ -191,10 +191,20 @@ loadbutton:hover{
 
 .linklist {
 	list-style-type:none;
-	vertical-align: top;
-	color: #e4e4e4;
+	padding: 10px;
+	margin-top: 0px;
 }
 
-.linklist:li {
+.linklist li {
+	margin: 10px 10px;
+}
+
+.linklist li a {
 	color: #e4e4e4;
+	text-decoration: none;
+}
+
+.linkheader {
+	color: #bbc8cf;
+	font-size: 16pt;
 }
