@@ -9,25 +9,74 @@
   <meta name="author" content="Leo Adberg and Amir Shahatit">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-  
-  <script src="w3data.js"></script>
 
 </head>
 
-<body onload="randomizeNames2()">
-  <!--<script src="js/scripts.js"></script>-->
-  Hey just testing the new CalCentral parody website!
-  <div w3-include-html="/html/header.html"></div>
-  <div w3-include-html="/html/navbar.html"></div>
-  <div w3-include-html="/html/body.html"></div>
+<body onload="randomizeNames()">
+<!-- Header -->
+  <table style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 40px;" bgcolor="#002F58" width="100%" border="0" cellspacing="0" cellpadding="0">  
+<tr>  
+      <td valign="bottom"><div id="logo" onclick="window.location.href = ''"></div><div id="strip"></div><titleyellow>&nbsp;&nbsp;CAL</titleyellow><titlewhite>CENTRAL</titlewhite><smalltitle>.me</smalltitle>
+      <div style="float: right;"><img src="../oski.png" width="30" height="30" alt="Oski" /><name id="test1" randomtext="&nbsp;&nbsp;Harambe&nbsp;&nbsp;,&nbsp;&nbsp;Oski Bear&nbsp;&nbsp;,&nbsp;&nbsp;DirksOut&nbsp;&nbsp;,&nbsp;&nbsp;A Student at the #1 Public University in the World&nbsp;&nbsp;">&nbsp;&nbsp;Harambe&nbsp;&nbsp;</name></div>
+    </td>  
+</tr>  
+</table>
 
+<!-- Navbar -->
+  <table style="position: absolute; top: 40px; bottom: 0; left: 0; right: 0;" bgcolor="#26637E" width="100%" border="0" cellspacing="0" cellpadding="0">  
+<tr>  
+      <td>
+      <ul class="tab">
+  <li><a href="#" class="tablinks active" onclick="openTab(event, 'Dashboard')" randomtext="My Dashboard,YesIAlreadyAttendedBearPact">Dashboard</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Academic')" randomtext="My Academics,NEEDMOARUNITS,My Waitlisted Classes">Academic</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Finances')" randomtext="Finances,$$$$$$,My Contribution to Dirk's Fence">Finances</a></li>
+  <li><a href="#" class="tablinks" onclick="openTab(event, 'Campus')" randomtext="My Campus,My Useless Links">My Campus</a></li>
+</ul>
+</td>  
+</tr>  
+</table>
+
+<!-- Body -->
+  <br><br><br><br>
+<div id="Dashboard" class="tabcontent default" default=1>
+  <table width="100%" border="0" cellspacing="10" cellpadding="0" class="dashboardwindow">
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>Classes</td>
+  </tr>
+  <tr>
+    <td>Class List</td>
+  </tr>
+</table>
+</td>
+    <td>Tasks</td>
+    <td>Notifications</td>
+  </tr>
+</table>
+</div>
+
+<div id="Academic" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Finances" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Campus" class="tabcontent">
+  <h3>Tokyo2</h3>
+  <p>Tokyo2 is the capital of Japan2.</p>
+</div>
+
+
+
+
+
+<!-- Javascript -->
   <script>
-  window.onload = function() {
-	randomizeNames2();
-    //setTimeout(randomizeNames, 200);
-  };
-  w3IncludeHTML();
-  
   temptabs = document.getElementsByClassName("tabcontent");
   for (i = 0; i < temptabs.length; i++) {
 	if (temptabs[i].hasAttribute("default")) {
@@ -56,7 +105,6 @@
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  //openTab(event, "Dashboard");
   
   
   //Set random names
@@ -77,15 +125,6 @@
 	  if (username.length > 0){
 		  username[0].innerHTML = username[0].getAttribute('randomtext').split(',').randomElement();
 	  }
-  }
-  
-  function randomizeNames2() {
-	  Array.prototype.randomElement = function () {
-		return this[Math.floor(Math.random() * this.length)]
-	  }
-	  test = document.getElementById('test1');
-	  console.log(test)
-	  test.innerHTML = test.getAttribute('randomtext').split(',').randomElement();
   }
   </script>
 </body>
