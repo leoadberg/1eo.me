@@ -127,7 +127,7 @@ ul.tab li a:focus, .active {background-color: #5F899C;}
 
 .default {display: block !important;}
 
-.dashboardwindow tr {
+.dashboardwindow td {
 	padding: 10px;
 }
 
