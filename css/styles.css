@@ -135,6 +135,6 @@ ul.tab li a:focus, .active {background-color: #5F899C;}
 	background-color: #f2f2f2;
 }
 
-.dashboardwindow tr:nth-child(eve) {
+.dashboardwindow tr:nth-child(even) {
 	background-color: #ffffff;
 }
