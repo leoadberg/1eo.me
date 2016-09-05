@@ -184,3 +184,7 @@ loadbutton:hover{
 	vertical-align: top;
 	color: #e4e4e4;
 }
+
+.linklist:li {
+	color: #e4e4e4;
+}
