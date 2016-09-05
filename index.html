@@ -23,7 +23,8 @@
 
   <script>
   window.onload = function() {
-    setTimeout(randomizeNames, 200);
+	randomizeNames2();
+    //setTimeout(randomizeNames, 200);
   };
   w3IncludeHTML();
   
@@ -76,6 +77,14 @@
 	  if (username.length > 0){
 		  username[0].innerHTML = username[0].getAttribute('randomtext').split(',').randomElement();
 	  }
+  }
+  
+  function randomizeNames2() {
+	  Array.prototype.randomElement = function () {
+		return this[Math.floor(Math.random() * this.length)]
+	  }
+	  test = document.getElementById('test1');
+	  test.innerHTML = test.getAttribute('randomtext').split(',').randomElement();
   }
   </script>
 </body>
