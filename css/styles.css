@@ -127,6 +127,10 @@ ul.tab li a:focus, .active {background-color: #5F899C;}
 
 .default {display: block !important;}
 
+.maindashboard td {
+	vertical-align: top;
+}
+
 .dashboardwindow {
 	padding-bottom: 10px;
 }
