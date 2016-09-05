@@ -14,7 +14,7 @@
 
 </head>
 
-<body onload="randomizeNames2()">
+<body onload="randomizeNames()">
   <!--<script src="js/scripts.js"></script>-->
   Hey just testing the new CalCentral parody website!
   <table style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 40px;" bgcolor="#002F58" width="100%" border="0" cellspacing="0" cellpadding="0">  
@@ -113,15 +113,6 @@
 	  if (username.length > 0){
 		  username[0].innerHTML = username[0].getAttribute('randomtext').split(',').randomElement();
 	  }
-  }
-  
-  function randomizeNames2() {
-	  Array.prototype.randomElement = function () {
-		return this[Math.floor(Math.random() * this.length)]
-	  }
-	  test = document.getElementById('test1');
-	  console.log(test)
-	  test.innerHTML = test.getAttribute('randomtext').split(',').randomElement();
   }
   </script>
 </body>
