@@ -196,12 +196,22 @@ loadbutton:hover{
 }
 
 .linklist li {
-	margin: 10px 10px;
+	padding: 10px 10px 10px 10px;
+	width:auto;
+	height:auto;
 }
 
 .linklist li a {
 	color: #e4e4e4;
 	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+	width:auto;
+	height:auto;
+	border-radius: 5px;
+}
+
+.linklist li a:hover {
+	background-color: #5e8398;
 }
 
 .linkheader {
