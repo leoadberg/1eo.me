@@ -9,14 +9,11 @@
   <meta name="author" content="Leo Adberg and Amir Shahatit">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-  
-  <script src="w3data.js"></script>
 
 </head>
 
 <body onload="randomizeNames()">
-  <!--<script src="js/scripts.js"></script>-->
-  Hey just testing the new CalCentral parody website!
+<!-- Header -->
   <table style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 40px;" bgcolor="#002F58" width="100%" border="0" cellspacing="0" cellpadding="0">  
 <tr>  
       <td valign="bottom"><div id="logo" onclick="window.location.href = ''"></div><div id="strip"></div><titleyellow>&nbsp;&nbsp;CAL</titleyellow><titlewhite>CENTRAL</titlewhite><smalltitle>.me</smalltitle>
@@ -24,26 +21,31 @@
     </td>  
 </tr>  
 </table>
-  
+
+<!-- Navbar -->
   <table style="position: absolute; top: 40px; bottom: 0; left: 0; right: 0;" bgcolor="#26637E" width="100%" border="0" cellspacing="0" cellpadding="0">  
 <tr>  
       <td>
-      
       <ul class="tab">
   <li><a href="#" class="tablinks active" onclick="openTab(event, 'Dashboard')" randomtext="My Dashboard,YesIAlreadyAttendedBearPact">Dashboard</a></li>
   <li><a href="#" class="tablinks" onclick="openTab(event, 'Academic')" randomtext="My Academics,NEEDMOARUNITS,My Waitlisted Classes">Academic</a></li>
   <li><a href="#" class="tablinks" onclick="openTab(event, 'Finances')" randomtext="Finances,$$$$$$,My Contribution to Dirk's Fence">Finances</a></li>
   <li><a href="#" class="tablinks" onclick="openTab(event, 'Campus')" randomtext="My Campus,My Useless Links">My Campus</a></li>
 </ul>
-      
-      
-      </td>  
+</td>  
 </tr>  
 </table>
+
+<!-- Body -->
   <br><br><br><br><br><br><br><br><br>
 <div id="Dashboard" class="tabcontent default" default=1>
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>Classes</td>
+    <td>Tasks</td>
+    <td>Notifications</td>
+  </tr>
+</table>
 </div>
 
 <div id="Academic" class="tabcontent">
@@ -61,9 +63,12 @@
   <p>Tokyo2 is the capital of Japan2.</p>
 </div>
 
+
+
+
+
+<!-- Javascript -->
   <script>
-  w3IncludeHTML();
-  
   temptabs = document.getElementsByClassName("tabcontent");
   for (i = 0; i < temptabs.length; i++) {
 	if (temptabs[i].hasAttribute("default")) {
@@ -92,7 +97,6 @@
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-  //openTab(event, "Dashboard");
   
   
   //Set random names
