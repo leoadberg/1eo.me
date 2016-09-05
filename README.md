@@ -1,1 +1,1 @@
-Test
+This is a parody site of Berkeley's Calcentral. If you want the real site, check it out at https://calcentral.berkeley.edu/. Made by Leo Adberg, Amir Shahatit, and Thanatcha Panpairoj.
