@@ -64,7 +64,7 @@
 		return this[Math.floor(Math.random() * this.length)]
 	  }
 	  tabs = document.getElementsByClassName('tablinks');
-	  console.log(tabs);
+	  //console.log(tabs);
 	  for (var i = 0; i < tabs.length; i++) {
 		  if (tabs[i].hasAttribute('randomtext')){
 			  randomtext = tabs[i].getAttribute('randomtext').split(',').randomElement();
