@@ -29,7 +29,7 @@
   <tr>
     <td><ul class="tab">
         <li><a href="#" class="tablinks active" onclick="openTab(event, 'Dashboard')" randomtext="My Dashboard,YesIAlreadyAttendedBearPact">Dashboard</a></li>
-        <li><a href="#" class="tablinks" onclick="openTab(event, 'Academic')" randomtext="My Academics,NEEDMOARUNITS,My Waitlisted Classes">Academic</a></li>
+        <li><a href="#" class="tablinks" onclick="openTab(event, 'Academic')" randomtext="My Academics,NEEDMOARUNITS,My Waitlisted Classes,Wait... I have classes?">Academic</a></li>
         <li><a href="#" class="tablinks" onclick="openTab(event, 'Finances')" randomtext="My Finances,My Arbitrary Fees,$$$$$$,My Contribution to Dirk's Fence,Take My Money">Finances</a></li>
         <li><a href="#" class="tablinks" onclick="openTab(event, 'Campus')" randomtext="My Campus,My Fourth Thing,My Useless Links">My Campus</a></li>
       </ul></td>
@@ -68,7 +68,16 @@
             <td>My Classes <greylabel>FALL 2016</greylabel></td>
           </tr>
           <tr>
-            <td>Class List</td>
+            <td>
+            <classname randomtext="allcourses"></classname><br>
+            <classdesc>Class 1 description</classdesc><hr>
+            <classname randomtext="allcourses"></classname><br>
+            <classdesc>Class 2 description</classdesc><hr>
+            <classname randomtext="allcourses"></classname><br>
+            <classdesc>Class 3 description</classdesc><hr>
+            <classname randomtext="allcourses"></classname><br>
+            <classdesc>Class 4 description</classdesc>
+            </td>
           </tr>
         </table>
         
@@ -296,7 +305,11 @@
 	  }
 	  elems = document.querySelectorAll('[randomtext]');
 	  for (var i = 0; i < elems.length; i++) {
-		  elems[i].innerHTML = elems[i].getAttribute('randomtext').split(',').randomElement();
+		  randomtext = elems[i].getAttribute('randomtext').split(',').randomElement();
+		  if (randomtext == "allcourses") {
+			  randomtext = "AEROSPC,AFRICAM,ARESEC,AMERSTD,ANTHRO,AST,ARABIC,ARCH,ARMENI,ART,ASAMST,ASIANST,ASTRON,BANGLA,BIOENG,BIOLOGY,BIOPHY,BOSCRSR,BUDDSTD,BURMESE,MBA,PHDBA,UGBA,CATALAN,CELTIC,CHMENG,CHEM,CHICANO,CHINESE,CYPLAN,CIVENG,CLASSIC,COGSCI,COLWRIT,COMPBIO,COMLIT,CMPBIO,COMPSCI,CRITTH,CUNEIF,CZECH,DANISH,DATASCI,DEMOG,DESINV,DEVENG,DEVP,DEVSTD,DUTCH,EPS,EALANG,ECON,EDUC,EGYPT,EECS,ELENG,ENERES,ENGIN,ENGLISH,ESPM,ENVECON,ENVDES,ETHSTD,EUST,EWMBA,XMBA,XANTHRO,XART,XASAMST,XASTRON,XCLASSI,XCOLWRI,XCOMLIT,XEPS,XENGLIS,XESPM,XETHSTD,XFILM,XGWS,XGEOG,XHISTOR,XHISTAR,XINTEGB,XLEGALS,XLS,XLINGUI,XMATH,XMESTU,XMCELLB,XMUSIC,XPHILOS,XPOLSCI,XPSYCH,XRHETOR,XSOCIOL,XSTAT,FILIPN,FILM,MFE,FINNISH,FOLKLOR,FRENCH,GWS,GEOG,GERMAN,GMS,GPP,GREEK,HMEDSCI,HEBREW,HINURD,HISTORY,HISTART,HUNGARI,ICELAND,INDENG,INFO,INTEGBI,ISF,IAS,ITALIAN,JAPAN,JEWISH,JOURN,KHMER,KOREAN,LGBT,LDARCH,LANPRO,LATIN,LATAMST,LAW,LEGALST,LS,LINGUIS,MALAYI,MATSCI,MATH,MECENG,MEDIAST,MEDST,MESTU,MILAFF,MILSCI,MCELLBI,MONGOLN,MUSIC,NSE,NATAMST,NATRES,NAVSCI,NESTUD,NEUROSC,NWMEDIA,NORWEGN,NUCENG,NUSCTX,OPTOM,PACS,PERSIAN,PHILOS,PHYSED,PHYSICS,PLANTBI,POLISH,POLECON,POLSCI,PORTUG,PSEUDO,PSYCH,PUBAFF,PBHLTH,PUBPOL,PUNJABI,RHETOR,RUSSIAN,SANSKR,SCANDIN,SCMATHE,STS,SEMITIC,SLAVIC,SOCWEL,SOCIOL,SSEASN,SASIAN,SEASIAN,SPANISH,STAT,SWEDISH,TAMIL,TELUGU,THAI,THEATER,TIBETAN,TURKISH,UGIS,VIETNMS,VISSCI,VISSTD,YIDDISH".split(',').randomElement() + " " + Math.floor(Math.random() * 198 + 1).toString();
+		  }
+		  elems[i].innerHTML = randomtext;
 	  }
   }
   
