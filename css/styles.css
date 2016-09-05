@@ -141,7 +141,7 @@ ul.tab li a:focus, .active {background-color: #5F899C;}
 
 .dashboardwindow tr:nth-child(odd) {
 	background-color: #EBEBEB;
-	font-size: 18;
+	font-size: 14pt;
 }
 
 .dashboardwindow tr:nth-child(even) {
@@ -150,5 +150,5 @@ ul.tab li a:focus, .active {background-color: #5F899C;}
 
 greylabel {
 	color: #999999;
-	font-size: 13;
+	font-size: 12pt;
 }
