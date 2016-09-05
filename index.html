@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="css/styles.css?v=1.0">
 </head>
 
-<body onload="randomizeNames()" bgcolor="#F6F6F6">
+<body onload="randomizeNames(); setDate()" bgcolor="#F6F6F6">
 <!-- Header -->
 <table style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 40px;" bgcolor="#002F58" width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -53,7 +53,7 @@
       
       	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="dashboardwindow">
           <tr>
-            <td>Today</td>
+            <td><div id="date"></div></td>
           </tr>
           <tr>
             <td>You have nothing scheduled.</td>
@@ -161,6 +161,12 @@
 	  if (username.length > 0){
 		  username[0].innerHTML = username[0].getAttribute('randomtext').split(',').randomElement();
 	  }
+  }
+  
+  function setDate() {
+	  var d = new Date();
+	  var month = ["JAN","FEB","MARCH","APRIL","MAY","JUNE","JULY","AUG","SEP","OCT","NOV","DEC"];
+	  document.getElementById("date").innerHTML = month[d.getMonth()];
   }
   </script>
 </body>
