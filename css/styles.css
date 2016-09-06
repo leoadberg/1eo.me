@@ -233,6 +233,7 @@ classdesc {
 .financialtable td {
 	background-color: #ffffff !important;
 	padding: 0px 0px 10px 0px;
+	font-size: 14px;
 }
 
 .financialtable td:nth-child(n+2) {
@@ -240,10 +241,9 @@ classdesc {
 }
 
 .financialtable tr:first-child {
-	font-size: 14px;
 	font-weight: bold;
 }
 
-.financialtable tr:nth-child(n+2) {
+/*.financialtable tr:nth-child(n+2) {
 	font-size: 12px;
-}
+}*/
