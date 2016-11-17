@@ -243,7 +243,3 @@ classdesc {
 .financialtable tr:first-child {
 	font-weight: bold;
 }
-
-/*.financialtable tr:nth-child(n+2) {
-	font-size: 12px;
-}*/
